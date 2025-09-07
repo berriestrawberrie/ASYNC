@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 166, 203);
+           
+        }
+        p , #return{
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 14px;
+            opacity: .6;
+        }
+        .vertical{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .advice{
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid rgb(255, 166, 203);
+            text-align: center;
+        }
+        .title{
+            font-family: "Cherry Bomb One", system-ui;
+            font-weight: 600;
+            font-size: 1.5em;
+            color: rgb(246, 49, 131);
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: rgb(246, 49, 131);
+            color: #fff;
+            font-family: "Cherry Bomb One", system-ui;
+            letter-spacing: 1.5px;
+            font-size: 18px;
+            border: 3px solid #fff;
+        }
+        button:hover {
+            background-color: #fff;
+            color: rgb(246, 49, 131);
+        }
+        .game{
+            height: 200px;
+            width: 200px;
+        }
+        #win, #lose {
+            display: none;
+        }
+        .return{
+            background-color: #fff;
+            padding:10px;
+            border-radius: 10px;
+        }
+     </style>
+        
+</head>
+<body>
+    <div class="vertical">
+        <label class="title">Advice(#):</label>
+        <p>Free advice for winners!</p>
+        <div class="return" id="return">
+        </div>
+        <p>Press the button to play, if you win you get advice.</p>
+         <div class="game">
+            <img src="win3.png" id="win" width="200">
+            <img src="lose3.png" id="lose" width="200">
+        </div>
+        <button id="play">Play?</button>
+    </div>
+    <script src="webpromise.js"></script>
+</body>
+</html>
