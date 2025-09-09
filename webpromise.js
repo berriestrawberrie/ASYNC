@@ -78,7 +78,7 @@ var playGame = function () { return __awaiter(_this, void 0, void 0, function ()
 }); };
 //PART 2
 var fetchAdviceBy = function (id) { return __awaiter(_this, void 0, void 0, function () {
-    var response, data, error_2;
+    var response, data, advice, error_2;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -89,7 +89,9 @@ var fetchAdviceBy = function (id) { return __awaiter(_this, void 0, void 0, func
                 return [4 /*yield*/, response.json()];
             case 2:
                 data = _a.sent();
-                userReturn.innerText = data.slip.advice;
+                advice = data.slip.advice;
+                //UPDATE THE WEBPAGE DIV
+                userReturn.innerText = advice;
                 return [3 /*break*/, 4];
             case 3:
                 error_2 = _a.sent();
@@ -101,7 +103,7 @@ var fetchAdviceBy = function (id) { return __awaiter(_this, void 0, void 0, func
 }); };
 //Part 3
 var getAdviceAfterGame = function () { return __awaiter(_this, void 0, void 0, function () {
-    var result, response, data, error_3;
+    var result, response, data, advice, error_3;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -116,7 +118,9 @@ var getAdviceAfterGame = function () { return __awaiter(_this, void 0, void 0, f
                 return [4 /*yield*/, response.json()];
             case 3:
                 data = _a.sent();
-                userReturn.innerText = data.slip.advice;
+                advice = data.slip.advice;
+                //UPDATE THE WEBPAGE DIV
+                userReturn.innerText = advice;
                 return [3 /*break*/, 5];
             case 4:
                 error_3 = _a.sent();
